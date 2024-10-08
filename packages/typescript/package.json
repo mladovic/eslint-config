@@ -1,5 +1,5 @@
 {
-  "name": "@ladni/eslint-config",
+  "name": "@mladovic/eslint-config",
   "version": "0.1.0",
   "repository": {},
   "description": "ESLint configuration for TypeScript projects",
