@@ -1,7 +1,10 @@
 {
   "name": "@mladovic/eslint-config",
   "version": "0.1.0",
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mladovic/eslint-config.git"
+  },
   "description": "ESLint configuration for TypeScript projects",
   "author": "Marin Ladovic",
   "main": "index.js",

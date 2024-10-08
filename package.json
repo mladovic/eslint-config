@@ -1,13 +1,24 @@
 {
-  "name": "eslint-config",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@mladovic/eslint-config-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mladovic/eslint-config.git"
+  },
+  "author": "Marin Ladovic",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "preconstruct watch",
+    "build": "preconstruct build",
+    "release": "pnpm test && pnpm build && pnpm publish && git push"
+  },
+  "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.25.7",
